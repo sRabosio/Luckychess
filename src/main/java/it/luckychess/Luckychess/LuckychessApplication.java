@@ -1,0 +1,21 @@
+package it.luckychess.Luckychess;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+@SpringBootApplication
+@Controller
+public class LuckychessApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LuckychessApplication.class, args);
+	}
+
+	@GetMapping("/asd")
+	public String asd(){
+		return "asd";
+	}
+
+}
