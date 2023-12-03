@@ -13,9 +13,8 @@ public class LuckychessApplication {
 		SpringApplication.run(LuckychessApplication.class, args);
 	}
 
-	@GetMapping("/asd")
-	public String asd(){
-		return "asd";
+	@GetMapping("/")
+	public String homepage(){
+		return "homepage";
 	}
-
 }
