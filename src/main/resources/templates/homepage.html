@@ -1,5 +1,5 @@
-<!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
+<!doctype html >
+<html xmlns:th="http://www.thymeleaf.org" class="h-full w-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,9 +8,55 @@
     <link rel="stylesheet" th:href="@{/css/build.tailwind.css}">
     <title>Document</title>
 </head>
-<body>
-    <div class="bg-red-500 w-12 absolute left-0 top-0 bottom-0 hover:w-40 transform duration-500">
-        a
+<body class="h-full w-full overflow-hidden">
+    <div class="bg-red-500 drawer w-12 absolute left-0 top-0 bottom-0 hover:w-40 transform duration-500">
+        <!-- drawer -->
+        <div class="drawer-content">
+
+        </div>
+    </div>
+    <!-- content container -->
+    <div class="flex flex-row w-full h-full px-16 py-4 overflow-auto">
+        <!-- cards ui -->
+        <div class="flex flex-col relative h-full w-[25%] max-lg:min-w-[300px]">
+
+            <div class="flex flex-row w-full mb-auto">
+                <div class="bg-red-500 flex w-32 h-40 ml-auto">
+
+                </div>
+            </div>
+            <div class="flex flex-row w-full min-h-content my-auto">
+                <div class="bg-red-500 flex w-32 h-40 ">
+                    <div class="bg-red-500 flex w-32 h-40 my-auto ml-auto">
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row w-full mt-auto">
+                <div class="bg-red-500 flex w-32 h-40 ml-auto">
+                </div>
+            </div>
+        </div>
+        <!-- board ui -->
+        <div class="grid h-full w-[75%] max-lg:min-w-[700px]">
+            <!-- opponent ui -->
+            <div class="w-full flex flex-row">
+                <span class="mb-auto ml-auto"> opponent timer </span>
+            </div>
+            <!-- board -->
+            <div class="flex flex-row w-full min-h-content">
+
+                <div class="m-auto h-[600px] w-[600px] flex bg-red-500">
+
+                </div>
+            </div>
+            <!-- player ui -->
+            <div class="w-full flex flex-row">
+                <span class="ml-auto mt-auto"> player timer </span>
+            </div>
+        </div>
+
+
     </div>
 </body>
 </html>
