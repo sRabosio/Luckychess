@@ -15,6 +15,11 @@ public class LuckychessApplication {
 
 	@GetMapping("/")
 	public String homepage(){
-		return "homepage";
+		return "pages/homepage";
+	}
+
+	@GetMapping("/components/")
+	public String components(String componentName){
+		return "components/" + componentName;
 	}
 }

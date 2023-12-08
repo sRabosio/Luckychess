@@ -2,11 +2,12 @@ module.exports ={
     mode: process.env.NODE_ENV ? 'jit' : undefined,
     content: [
         './src/main/resources/*.html',
-        './src/main/resources/templates/*.html'
+        './src/main/resources/templates/**/*.html'
         ],
     darkMode: 'media',
     theme: {
-        extend: {},
+        extend: {
+        },
     },
     variants: {
         extend: {},
