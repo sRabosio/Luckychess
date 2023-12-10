@@ -18,8 +18,12 @@ public class LuckychessApplication {
 		return "pages/homepage";
 	}
 
-	@GetMapping("/components/")
-	public String components(String componentName){
-		return "components/" + componentName;
+	@GetMapping("/components/{componentName}")
+	public String components(@PathVariable String componentName){
+		var result = "components/" + componentName;
+		return result;
 	}
+
+
+
 }
