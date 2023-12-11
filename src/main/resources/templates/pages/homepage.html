@@ -1,5 +1,5 @@
 <!doctype html >
-<html xmlns:th="http://www.thymeleaf.org" class="h-full w-full">
+<html xmlns:th="http://www.thymeleaf.org" class="h-full w-full" data-theme="luckychessDark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,10 +8,11 @@
     <link rel="stylesheet" th:href="@{/css/build.tailwind.css}">
     <script type="text/javascript" th:src="@{/lib/htmx.min.js}"></script>
     <script type="text/javascript" th:src="@{/lib/hyperscript.min.js}"></script>
+    <script type="text/javascript" th:src="@{/lib/theme-change@2.0.2.js}"></script>
     <title>Lucky chess</title>
 </head>
 <body class="h-full w-full overflow-hidden">
-    <dialog class="modal" open hx-get="/components/dialogWelcome" hx-target="this" hx-swap="innerHTML" hx-trigger="load">
+    <dialog class="modal" open hx-get="/components/dialogWelcome" hx-target="this" hx-swap="innerHTML" hx-trigger="load" >
 
     </dialog>
     <div class="bg-red-500 drawer w-12 absolute left-0 top-0 bottom-0 hover:w-40 transform duration-500">

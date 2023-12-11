@@ -1,18 +1,18 @@
-<div class="modal-box">
+<form action="dialog" class="modal-box bg-secondary">
     <h3 class="px-auto text-center pb-8">Benvenuto</h3>
     <div class="grid grid-cols-[minmax(max-content, 25%)_auto]">
         <label for="playerNick">Nickname</label>
-        <input id="playerNick" name="playerNick" placeholder="..." class="input w-full" type="text" maxlength="20" >
+        <input id="playerNick" name="playerNick" placeholder="..." required class="input w-full" type="text" maxlength="20" >
     </div>
     <div class="grid grid-cols-[minmax(max-content, 25%)_auto] pb-4">
         <label for="gameCode">Codice partita</label>
         <div class="flex w-full">
             <input id="gameCode" name="gameCode" placeholder="..." class="input grow" type="text" maxlength="20" >
-            <button class="btn btn-primary ml-auto" >Unisciti alla partita</button>
+            <button type="submit" class="btn btn-primary ml-auto" >Unisciti alla partita</button>
         </div>
     </div>
     <div class="float-right">
         <span>Oppure</span>
-        <button class="btn btn-primary">Hosta</button>
+        <button type="submit" class="btn btn-primary">Hosta</button>
     </div>
-</div>
+</form>
